@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container_main">
+        <div class="container_input">
+            <form action="">
+                <div class="border_for_radio">
+                    <div class="form_radio_group">
+                        <div class="form_radio_group-item">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1">Radio button 1</label>
+                        </div>
+                        <div class="form_radio_group-item">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">Radio button 2</label>
+                        </div>
+                        <div class="form_radio_group-item">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">Radio button 3</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_for_name">
+                    <label for="lastN">Отчество</label>
+                    <input type="text" name="lastname" id="lastN">
+                
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+            
+                    <label for="secoundN">Фамилия</label>
+                    <input type="text" name="secoundname" id="secoundN">
+
+                    <label for="position">Должность</label>
+                    <input type="text" name="position" id="position">
+                </div>
+                <div class="border_for_phone">
+                    <label for="phoneNumb">Телефон</label>
+                    <input type="phone">
+                    <button class="add_info">Добавить</button>
+                   <!--<div class="add_info_hidden_numb">
+                        <label for="phoneNumb">Телефон</label>
+                        <input type="phone">
+                        <button class="hide_info_numb">Удалить</button>
+                    </div> -->
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="border_for_address">
+                    <label for="address">Адрес</label>
+                    <input type="text" name="address" id="address">
+                    <button class="add_address">Добавить</button>
+                    <!--<div class="add_info_hidden_address">
+                        <label for="phoneNumb">Телефон</label>
+                        <input type="phone">
+                        <button class="hide_info_address">Удалить</button>
+                    </div> -->
+                </div>
+                <div class="border_for_quantity">
+                    <label for="quantity">Количество</label>
+                    <input type="number" name="quantity" id="quantity">
+                </div>
+            </form>
+        </div>
+
+        <div class="container_output"> <!-- вывод визитки -->
+            <div class="business-card">
+                <div class="business-card__header">
+                    <div class="__header_logo">
+                        <img src="logo-gk-shans.png" alt="Company Logo">
+                    </div>
+                    <div class="__header_info">
+                        <div class="_info_lastname">
+                            <span></span>
+                        </div>
+                        <div class="_info_name">
+                            <span id="name"></span><span id="secound_name"></span>
+                        </div>
+                        <div class="position">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="business-card__footer"> 
+                    <div class="__footer_phone">
+                        <div class="__footer_phone_ico">
+                            <div class="_ico">
+                                <!--  иконка звонка  -->
+                            </div>
+                            <div class="_ico_txt">
+                                <span>Телефон:</span>
+                            </div>
+                        </div>
+                        <div class="_phone_inf">
+
+                            <div class="_inf_numb_1">
+                                <span></span>
+                            </div>
+
+                            <div class="_inf_numb_2 hidden">
+                                <span></span>
+                            </div>
+                            <div class="additional_numbs hidden">
+                                <div class="_inf_add_numb_1 hidden">
+                                    <span>12</span>
+                                </div>
+    
+                                <div class="_inf_add_numb_2 hidden">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__footer_email">
+                        <div class="__footer_email_ico">
+                            <div class="_ico">
+                                <!--  иконка почты  -->
+                            </div>
+                            <div class="_ico_txt">
+                                <span>E-mail:</span>
+                            </div>
+                        </div>
+                        <div class="_email_inf">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="__footer_address">
+                        <div class="__footer_address_ico">
+                            <div class="_ico">
+                                <!--  иконка карты  -->
+                            </div>
+                            <div class="_ico_txt">
+                                <span>Адрес:</span>
+                            </div>
+                        </div>
+                        <div class="_address_inf">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
